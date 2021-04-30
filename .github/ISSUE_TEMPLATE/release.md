@@ -15,7 +15,7 @@ This is a checklist for releases. This is filled in by both the releaser and the
 
 #### Update Documentation
 
-- [ ] Create a new release in the [`whats-new` section](doc/content/whats-new) and copy the release CHANGELOG from [TheThingsIndustries/lorawan-stack](https://github.com/TheThingsIndustries/lorawan-stack). The title is the release version and the date is the release date.
+- [ ] Create a new release in the [`whats-new` section](https://github.com/TheThingsIndustries/lorawan-stack-docs/tree/master/doc/content/whats-new) and copy the release CHANGELOG from [TheThingsIndustries/lorawan-stack](https://github.com/TheThingsIndustries/lorawan-stack). The title is the release version and the date is the release date.
 - [ ] Update the [documentation version](https://github.com/TheThingsIndustries/lorawan-stack-docs/blob/master/doc/config/_default/config.toml#L28) to match the current minor, if necessary (`v3.${minor}`).
 - [ ] To generate documentation, create a clone of [TheThingsIndustries/lorawan-stack](https://github.com/TheThingsIndustries/lorawan-stack), and **checkout the git tag of the release**.
 - [ ] To generate API documentation, run the following from within the clone of [TheThingsIndustries/lorawan-stack](https://github.com/TheThingsIndustries/lorawan-stack): 
@@ -42,7 +42,7 @@ $ go build -tags tti ./cmd/tti-lw-cli
 - [ ] Then export the CLI documentation using the following command:
 
 ```bash
-$ HOME='$HOME' ./tti-lw-cli gen-yaml-doc -o /path/to/lorawan-stack-docs/doc/data/
+$ HOME='$HOME' ./tti-lw-cli gen-yaml-doc -o ../lorawan-stack-docs/doc/data/
 ```
 
 > NOTE: Replace `../lorawan-stack-docs` if your `lorawan-stack-docs` folder is in a different location.
